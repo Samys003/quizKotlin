@@ -12,6 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.aulasandroid.quiz.Screens.initScreen
+import com.aulasandroid.quiz.Screens.quizScreen
+import com.aulasandroid.quiz.Screens.resultScreen
 import com.aulasandroid.quiz.ui.theme.QuizTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +23,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuizTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    initScreen(modifier = Modifier.padding(innerPadding)
+                    //initScreen(modifier = Modifier.padding(innerPadding),
+                    //quizScreen(modifier = Modifier.padding(innerPadding)
+                    resultScreen(modifier = Modifier.padding(innerPadding)
+
                     )
                 }
             }
